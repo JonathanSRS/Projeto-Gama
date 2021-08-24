@@ -1,0 +1,126 @@
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Atualize seu currículo</title>
+  <link href="https://fonts.googleapis.com/css?family=Karla:400,700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+  <main class="d-flex align-items-center">
+    <div class="container">
+        <div class="row d-flex justify-content-center no-gutters">
+
+          <div class="col-md-8">
+
+
+            <div class="row d-flex justify-content-center mt-4">
+
+            </div>
+            <div class="card-body">
+
+              <p class="login-card-description">Atualize os dados do seu currículo</p>
+              <form>
+                <!-- <div class="form-group">
+                  <label for="email" class="sr-only">Nome Completo</label>
+                  <input [(ngModel)]='user.nomeCompleto' type="email" name="email" id="email" class="form-control" placeholder="Nome Completo*">
+                </div> -->
+
+                <div class="form-group">
+                  <label for="telefone" class="sr-only">Telefone</label>
+                  <input [(ngModel)]='user.telefone' type="number" name="telefone" id="telefone" class="form-control"
+                    placeholder="Telefone* Ex: (11) 91234-5678)">
+                </div>
+
+                <div class="form-group">
+                  <label [(ngModel)]='user.cep' for="email" class="sr-only">CEP</label>
+                  <input type="number" name="email" id="cep" class="form-control" placeholder="CEP*">
+                </div>
+                <div class="form-group">
+                  <label for="endereco" class="sr-only">Endereço</label>
+                  <input [(ngModel)]='user.endereco' type="text" name="endereco" id="endereco" class="form-control"
+                    placeholder="Endereço*">
+                </div>
+
+
+                <div class="form-group">
+                  <label for="rne" class="sr-only">RNE</label>
+                  <input [(ngModel)]='user.rne' type="text" name="rne" id="rne" class="form-control" placeholder="RNE*">
+                </div>
+
+                <div class="form-group">
+                  <label for="formacaoAcademica" class="sr-only">Formaçao Academica</label>
+                  <input [(ngModel)]='user.formacaoAcademica' type="text" name="formacaoAcademica" id="formacaoAcademica" class="form-control"
+                    placeholder="Escolaridade">
+                </div>
+
+                <div class="form-group">
+                  <label for="cursos" class="sr-only">Cursos</label>
+                  <input [(ngModel)]='user.cursos' type="text" name="cursos" id="cursos" class="form-control"
+                    placeholder="Tem interesse em uma área específia? Digite.">
+                </div>
+
+                <div class="form-group">
+                  <label for="idiomas" class="sr-only">Idiomas</label>
+                  <input [(ngModel)]='user.idiomas' type="text" name="idiomas" id="idiomas" class="form-control"
+                    placeholder="Idiomas que você fala e o nível de proficiência. (Ex: Inglês - Avançado).">
+                </div>
+
+
+                <div class="form-group">
+                  <label for="expprof" class="sr-only">Experiência Profissional 1</label>
+                  <input [(ngModel)]='user.experiencia1' type="text" name="expprof" id="expprof1" class="form-control"
+                    placeholder="Experiência Profissional 1">
+                </div>
+                <div class="form-group">
+                  <label for="expprof" class="sr-only">Experiência Profissional 2</label>
+                  <input [(ngModel)]='user.experiencia2' type="text" name="email" id="expprof2" class="form-control"
+                    placeholder="Experiência Profissional 2">
+                </div>
+                <div class="form-group">
+                  <label for="expprof" class="sr-only">Experiência Profissional 3</label>
+                  <input [(ngModel)]='user.experiencia3' type="text" name="expprof" id="expprof3" class="form-control"
+                    placeholder="Experiência Profissional 3">
+                </div>
+
+
+
+
+                <div class="textarea">
+                  <textarea [(ngModel)]='user.objetivoProfissional' type="text" name="textarea" id="textarea" class="form-textarea w-100 mb-4"
+                    placeholder="Digite seu objetivo profissional"></textarea>
+                </div>
+
+                <div class="form-group">
+                  <label for="password" class="sr-only">Senha</label>
+                  <input (input)='confirmSenha($event)' type="password" name="senha" id="senha" class="form-control"
+                    placeholder="Senha">
+                </div>
+                <div class="form-group">
+                  <label for="text" class="sr-only">Confirme sua senha</label>
+                  <input [(ngModel)]='user.senha' type="password" name="confirmarSenha" id="confirmarsenha"
+                    class="form-control" placeholder="Confirme sua senha">
+                </div>
+
+                <div class="d-flex justify-content-center mb-5">
+                  <button type="submit" class="btn btn-secondary  mr-2 mb-5" routerLink='/feed-user'>Cancelar</button>
+                  <button type="submit" class="btn login-btn mr-2 mb-5" (click)='atualizar()'>Atualizar</button>
+
+                </div>
+
+              </form>
+
+            </div>
+          </div>
+
+        </div>
+
+    </div>
+
+
+
+
+  </main>
+
+</body>
