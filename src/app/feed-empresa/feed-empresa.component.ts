@@ -49,10 +49,10 @@ export class FeedEmpresaComponent implements OnInit {
 
     window.scroll(0,0)
 
-    // if(environment.token == ''){
-    // this.alertas.showAlertInfo('Faça o login')
-    //  this.router.navigate(['/home'])
-    // }
+    if(environment.token == ''){
+    this.alertas.showAlertInfo('Faça o login')
+     this.router.navigate(['/home'])
+    }
 
     this.getAllTemas()
     this.getAllPostagens()
